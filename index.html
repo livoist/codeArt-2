@@ -1,0 +1,226 @@
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+    <script src="sketch.js"></script>
+  </head>
+  <body>
+    <main></main>
+  </body>
+</html>
+
+<script>
+function setup() {
+	createCanvas(900, 600);
+	
+	let colors = ['#d2a817','#539153','#c54e1e','#041556']
+	let colors2 = ['#FFD0D6','#B7DDE0','#FEE19F','#735B69']
+	let colors3 = ['#bab0a8','#efc8b3','#3a3938']
+	let c1 = color(random(colors))
+	let c2 = color(random(colors2))
+	let c3 = color(random(colors3))
+	let c4Ary = concat(colors, colors2, colors3)
+	let c4 = color(random(c4Ary))
+	c1.setAlpha(100)
+	c2.setAlpha(200)
+	c3.setAlpha(300)
+	
+	noStroke()
+	
+	background('#f6f9f4');
+	fill(c1)
+	triangle(400,100,450,90,460,125)
+	fill(c4)
+	triangle(450,90,472,100,460,125)
+	fill(c3)
+	triangle(460,125,472,100,468,140)
+	fill(c2)
+	triangle(468,140,470,120,488,140)
+	fill(c3)
+	triangle(468,140,460,125,460,155)
+	fill(c1)
+	triangle(460,125,460,155,420,152)
+	fill(c3)
+	triangle(460,125,400,125,420,152)
+	fill(c4)
+	triangle(460,125,400,125,400,100)
+	fill(c2)
+	triangle(400,100,360,160,400,125)
+	fill(c1)
+	triangle(360,160,400,125,420,152)
+	fill(c2)
+	triangle(360,160,355,210,420,152)
+	fill(c1)
+	triangle(355,212,410,206,420,152)
+	fill(c2)
+	triangle(355,212,410,206,420,152)
+	fill(c1)
+	triangle(410,206,460,210,420,152)
+	fill(c4)
+	triangle(420,152,460,210,450,170)
+	fill(c2)
+	triangle(450,170,462,152,420,152)
+	fill(c1)
+	fill('#ffffff')
+	circle(460,125,16)
+	fill('black')
+	circle(460, 125, 12);
+	fill(c2)
+	triangle(460,210,476,280,410,206)
+	fill(c1)
+	triangle(476,280,430,276,410,206)
+	fill(c3)
+	triangle(430,276,470,330,476,280)
+	fill(c3)
+	triangle(470,330,430,330,430,276)
+	fill(c2)
+	triangle(470,330,430,330,450,370)
+	fill(c1)
+	triangle(430,330,450,370,390,450)
+	fill(c1)
+	triangle(430,330,390,450,390,350)
+	fill(c2)
+	triangle(412,208,430,278,404,262)
+	
+
+	// Draw floorGrass
+	push()
+		floorGreen()
+	pop()	
+
+	fill(c3)
+	triangle(404,262,430,278,430,330)
+	fill(c2)
+	triangle(404,262,390,350,430,330)
+	fill(c3)
+	triangle(410,206,342,250,355,212)
+	fill(c1)
+	triangle(412,206,404,262,342,250)
+	fill(c1)
+	triangle(342,250,390,350,404,262)
+	fill(c2)
+	triangle(355,212,308,260,342,250)
+	fill(c1)
+	triangle(308,260,342,250,365,300)
+	fill(c3)
+	triangle(365,300,308,260,270,318)
+	fill(c2)
+	triangle(365,300,290,344,270,318)
+	fill(c1)
+	triangle(365,300,290,344,352,346)
+	fill(c2)
+	triangle(365,300,352,346,390,350)
+	fill(c4)
+	triangle(352,346,390,350,390,450)
+	fill(c1)
+	triangle(352,346,350,420,390,450)
+	fill(c1)
+	triangle(350,420,342,464,390,450)
+	fill(c2)
+	triangle(342,464,390,450,374,480)
+	fill(c3)
+	triangle(374,480,380,472,398,496)
+	fill(c1)
+	triangle(372,480,390,500,398,496)
+	fill(c3)
+	triangle(390,500,430,495,394,490)
+	fill(c1)
+	triangle(390,500,382,494,364,504)
+	fill(c2)
+	triangle(384,502,410,510,400,500)
+	fill(c4)
+	triangle(270,318,220,380,290,344)
+	fill(c2)
+	triangle(290,344,352,346,300,390)
+	fill(c1)
+	triangle(300,390,320,420,352,346)
+	fill(c3)
+	triangle(352,346,320,420,350,420)
+	fill(c2)
+	triangle(352,346,320,420,350,420)
+	fill(c1)
+	triangle(320,420,350,420,294,466)
+	fill(c1)
+	triangle(350,420,294,466,342,464)
+	fill(c2)
+	triangle(290,344,260,390,220,380)
+	fill(c2)
+	triangle(290,344,260,390,300,390)
+	fill(c1)
+	triangle(260,390,220,430,300,390)
+	fill(c1)
+	triangle(220,430,320,420,300,390)
+	fill(c3)
+	triangle(320,420,294,466,254,460)
+	fill(c1)
+	triangle(220,430,320,420,254,460)
+	fill(c3)
+	triangle(294,466,316,466,312,490)
+	fill(c4)
+	triangle(294,466,296,488,312,490)
+	fill(c2)
+	triangle(296,488,274,496,304,500)
+	fill(c1)
+	triangle(324,506,304,500,296,488)
+	fill(c3)
+	triangle(296,488,340,494,310,498)
+	fill(c2)
+	triangle(220,380,170,420,260,390)
+	fill(c2)
+	triangle(220,430,170,420,260,390)
+	fill(c1)
+	triangle(220,430,218,470,254,460)
+	fill(c1)
+	triangle(220,430,70,500,170,420)
+	fill(c2)
+	triangle(220,470,220,430,190,470)
+	fill(c3)
+	triangle(66,514,220,430,70,500)
+	fill(c4)
+	triangle(66,514,220,430,56,540)
+	fill(c2)
+	triangle(76,544,220,430,56,540)
+	fill(c1)
+	triangle(76,544,220,430,190,470)
+	
+	fill(c4)
+	textSize(40)
+	textStyle(BOLD)
+	text('Colors Dove', 550, 150)
+	textStyle(NORMAL)
+	textSize(16)
+	text('C l i c k - A n y w h e r e', 550, 220)
+	text('C h a n g e - D o v e C o l o r', 550, 250)
+
+}
+
+function floorGreen() {
+	// floor
+	fill('#7ebc70')
+	noStroke()
+	rect(0,480,900,100)
+}
+
+function mouseClicked() {
+	setup()
+}
+
+function draw() {
+// textSize(50)
+// text(int(mouseX) + ',' + int(mouseY),50,50)
+	
+}
+</script>
+
+<style>
+body,html {
+  padding: 0;
+  margin: 0;
+}
+
+canvas {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+</style>
